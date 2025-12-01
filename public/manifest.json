@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Ghost Phrase Complement",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Render English-only fixed phrases as ghost text, let Tab confirm them, and show a toast if non‑English input is detected across ChatGPT/Gemini/Claude fields.",
 
   "icons": {
