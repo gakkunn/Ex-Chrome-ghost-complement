@@ -1,4 +1,24 @@
-node_modules/
-dist/
+# OS-specific junk files
+.DS_Store
+Thumbs.db
+
+# Logs / temporary files
 *.log
-dom/
+*.tmp
+*.swp
+*.swo
+
+# Build artifacts
+dist/
+
+# Dependency directories
+node_modules/
+
+# Environment variables / secrets
+.env
+.env.*
+*.local
+
+# Editor / IDE settings
+.vscode/
+.idea/
