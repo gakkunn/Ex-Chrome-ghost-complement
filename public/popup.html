@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ChatGPT Complement</title>
+  <style>
+    body {
+      width: 400px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 16px;
+      color: #333;
+    }
+    h1 {
+      font-size: 18px;
+      margin: 0 0 16px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    label {
+      font-weight: 600;
+      font-size: 13px;
+    }
+    input[type="text"], textarea {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    textarea {
+      min-height: 60px;
+      resize: vertical;
+    }
+    button {
+      cursor: pointer;
+      padding: 8px 16px;
+      border-radius: 4px;
+      border: none;
+      font-weight: 600;
+      transition: opacity 0.2s;
+    }
+    button:hover {
+      opacity: 0.8;
+    }
+    .btn-primary {
+      background-color: #10a37f;
+      color: white;
+    }
+    .btn-danger {
+      background-color: #ef4146;
+      color: white;
+      padding: 4px 8px;
+      font-size: 12px;
+    }
+    .entries-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-height: 300px;
+      overflow-y: auto;
+      border-top: 1px solid #eee;
+      padding-top: 16px;
+    }
+    .entry-item {
+      background: #f9f9f9;
+      border: 1px solid #eee;
+      border-radius: 4px;
+      padding: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .entry-content {
+      flex: 1;
+      min-width: 0;
+    }
+    .phrase-text {
+      font-size: 13px;
+      word-break: break-word;
+      white-space: pre-wrap;
+    }
+    .message {
+      padding: 8px;
+      border-radius: 4px;
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+    .error {
+      background-color: #fee2e2;
+      color: #991b1b;
+    }
+    .success {
+      background-color: #dcfce7;
+      color: #166534;
+    }
+    .hidden {
+      display: none;
+    }
+    .empty-state {
+      text-align: center;
+      color: #666;
+      font-size: 13px;
+      padding: 20px 0;
+    }
+    .toggles {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .toggle-btn {
+      flex: 1;
+      padding: 6px;
+      font-size: 12px;
+      background: #eee;
+      color: #666;
+    }
+    .toggle-btn.active {
+      background: #10a37f;
+      color: white;
+    }
+    .help-text {
+      font-size: 11px;
+      color: #666;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>ChatGPT Complement</h1>
+  
+  <div id="errorMessage" class="message error hidden"></div>
+  <div id="successMessage" class="message success hidden"></div>
+
+  <div class="container">
+    <div class="toggles">
+      <button id="chatgptToggle" class="toggle-btn active">ChatGPT</button>
+      <button id="geminiToggle" class="toggle-btn active">Gemini</button>
+      <button id="claudeToggle" class="toggle-btn active">Claude</button>
+    </div>
+
+    <form id="addEntryForm">
+      <div class="form-group">
+        <label for="phrase">New Phrase (English only)</label>
+        <textarea id="phrase" placeholder="e.g., Thank you for your cooperation." required></textarea>
+        <div class="help-text">Type 5+ characters to trigger completion.</div>
+      </div>
+      <button type="submit" class="btn btn-primary" style="margin-top: 8px;">Add Phrase</button>
+    </form>
+
+    <div class="entries-header">
+      <label>Registered Phrases</label>
+    </div>
+
+    <div id="entriesList" class="entries-list">
+      <!-- Entries will be inserted here -->
+    </div>
+    
+    <div id="emptyState" class="empty-state hidden">
+      No phrases added yet.
+    </div>
+  </div>
+
+  <script src="popup/popup.js"></script>
+</body>
+</html>
