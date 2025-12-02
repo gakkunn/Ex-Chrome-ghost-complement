@@ -11,6 +11,7 @@ The Extension does not transmit or store any personal information or usage data 
 To provide inline completions, the Extension reads the text you type in supported input fields on ChatGPT, Gemini, and Claude while the field is active. This text is processed only in memory to match it against your saved English phrases and is not sent off your device.
 
 The Extension stores the following items locally in your browser using Chrome's storage features:
+
 - The list of English phrases you add through the popup (up to 300 entries)
 - Per-site enable/disable settings for ChatGPT, Gemini, and Claude
 - Timestamps and version metadata needed to manage the above data
@@ -30,5 +31,5 @@ If we make important changes, we will announce them via the extension's store pa
 
 If you have any questions about this Privacy Policy, please contact:
 
-- Developer: Gakkunn  
-- Contact: https://github.com/gakkunn/Ex-Chrome-ghost-complement.git
+- Developer: Gakkunn
+- Contact: [GitHub](https://github.com/gakkunn/Ex-Chrome-ghost-complement)

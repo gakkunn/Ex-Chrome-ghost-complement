@@ -28,12 +28,12 @@ This is an open-source extension implemented based on Chrome Extension Manifest 
 
 ## Screenshots
 
-| Screen                                          | Description                                    |
-| ----------------------------------------------- | ---------------------------------------------- |
-| ![screenshot-1](./docs/images/screenshot-1.png) | Popup settings interface (phrase manager)      |
-| ![screenshot-2](./docs/images/screenshot-2.png) | ChatGPT ghost text suggestion in action        |
-| ![screenshot-3](./docs/images/screenshot-3.png) | Gemini ghost text suggestion in action         |
-| ![screenshot-4](./docs/images/screenshot-4.png) | Claude ghost text suggestion in action         |
+| Screen                                          | Description                               |
+| ----------------------------------------------- | ----------------------------------------- |
+| ![screenshot-1](./docs/images/screenshot-1.png) | Popup settings interface (phrase manager) |
+| ![screenshot-2](./docs/images/screenshot-2.png) | ChatGPT ghost text suggestion in action   |
+| ![screenshot-3](./docs/images/screenshot-3.png) | Gemini ghost text suggestion in action    |
+| ![screenshot-4](./docs/images/screenshot-4.png) | Claude ghost text suggestion in action    |
 
 ---
 
