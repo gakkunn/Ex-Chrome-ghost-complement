@@ -83,7 +83,7 @@ async function run() {
     target: 'es2020',
     sourcemap: isDev,
     minify: !isDev,
-    drop: !isDev ? ['console'] : [],
+    drop: !isDev ? ['console', 'debugger'] : [],
     logLevel: 'info',
   };
 
