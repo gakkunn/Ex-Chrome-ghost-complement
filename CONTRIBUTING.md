@@ -55,7 +55,6 @@ When filing an Issue, try to include:
    ```
 
 2. Open the extensions page in Chrome:
-
    - Enter `chrome://extensions/` in the address bar
    - Toggle **"Developer mode"** on in the top right corner
    - Click **"Load unpacked"**
@@ -128,4 +127,3 @@ git commit -m "Fix: handle null tab in background script"
 
 Thank you for considering contributing to Ghost Phrase Complement!  
 Bug reports, suggestions, document fixes, and any small contributions are welcome.
-

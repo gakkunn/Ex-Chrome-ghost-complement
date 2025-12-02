@@ -1,9 +1,9 @@
 ---
 name: Feature request
 about: Suggest a new feature or improvement for the Chrome extension
-title: "[Feature] "
+title: '[Feature] '
 labels: enhancement
-assignees: ""
+assignees: ''
 ---
 
 ## Summary
@@ -25,4 +25,3 @@ Mention any alternative solutions or workarounds you've considered.
 ## Additional Context
 
 Add UI ideas, references, or any other context here.
-

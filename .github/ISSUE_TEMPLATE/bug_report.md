@@ -1,9 +1,9 @@
 ---
 name: Bug report
 about: Report a bug in the Chrome extension
-title: "[Bug] "
+title: '[Bug] '
 labels: bug
-assignees: ""
+assignees: ''
 ---
 
 ## Summary
@@ -12,9 +12,9 @@ Describe the bug in a few sentences.
 
 ## Steps to Reproduce
 
-1. 
-2. 
-3. 
+1.
+2.
+3.
 
 ## Expected Behavior
 
@@ -33,4 +33,3 @@ If possible, add screenshots or console logs.
 - OS:
 - Browser: Chrome version:
 - Extension version:
-

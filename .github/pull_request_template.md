@@ -21,4 +21,3 @@ Check the items you have verified:
 ## Additional Notes
 
 Add anything reviewers should pay special attention to, if any.
-
