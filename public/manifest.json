@@ -15,7 +15,7 @@
     {
       "matches": [
         "*://chatgpt.com/*",
-        "https://chat.openai.com/*",
+        "*://chat.openai.com/*",
         "*://gemini.google.com/*",
         "*://claude.ai/*"
       ],
