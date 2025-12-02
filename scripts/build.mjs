@@ -1,3 +1,4 @@
+/* eslint-env node */
 import { build, context } from 'esbuild';
 import fs from 'fs';
 import fsp from 'fs/promises';
@@ -13,7 +14,7 @@ const stylesDir = path.join(projectRoot, 'src', 'styles');
 
 const entryPoints = {
   'content-scripts/main': path.join(projectRoot, 'src', 'content-scripts', 'main.ts'),
-  'popup/popup': path.join(projectRoot, 'src', 'popup', 'popup.ts')
+  'popup/popup': path.join(projectRoot, 'src', 'popup', 'popup.ts'),
 };
 
 const isWatch = process.argv.includes('--watch');
@@ -83,7 +84,7 @@ async function run() {
     sourcemap: isDev,
     minify: !isDev,
     drop: !isDev ? ['console'] : [],
-    logLevel: 'info'
+    logLevel: 'info',
   };
 
   await cleanDist();

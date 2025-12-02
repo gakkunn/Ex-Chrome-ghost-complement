@@ -36,20 +36,20 @@ interface SelectionContext {
 }
 
 init().catch((error) => {
-  console.error('[ChatGPT Complement] Initialization failed:', error);
+  console.error('[Ghost Phrase Complement] Initialization failed:', error);
 });
 
 async function init(): Promise<void> {
   await loadData();
   setupFieldDetection();
-  console.debug('[ChatGPT Complement] Content script initialized');
+  console.debug('[Ghost Phrase Complement] Content script initialized');
 }
 
 async function loadData(): Promise<void> {
   try {
     currentData = await readStoredData();
   } catch (error) {
-    console.error('[ChatGPT Complement] Failed to load data:', error);
+    console.error('[Ghost Phrase Complement] Failed to load data:', error);
     currentData = createDefaultData();
   }
 }
@@ -145,7 +145,7 @@ function attachToField(field: ActiveField): void {
     ghostOverlay = null;
   }
 
-  console.debug('[ChatGPT Complement] Attached to field:', field.tagName);
+  console.debug('[Ghost Phrase Complement] Attached to field:', field.tagName);
 }
 
 function detachFromField(): void {
@@ -174,7 +174,7 @@ function detachFromField(): void {
   activeField = null;
   isComposing = false;
 
-  console.debug('[ChatGPT Complement] Detached from field');
+  console.debug('[Ghost Phrase Complement] Detached from field');
 }
 
 function createTextareaOverlay(textarea: HTMLTextAreaElement): void {
@@ -630,7 +630,7 @@ function showContentEditableGhost(ghostText: string): void {
       rect = span.getBoundingClientRect();
       span.remove();
     } catch (error) {
-      console.error('[ChatGPT Complement] Failed to place ghost text:', error);
+      console.error('[Ghost Phrase Complement] Failed to place ghost text:', error);
       return;
     }
   }
@@ -705,7 +705,7 @@ function acceptCompletion(): void {
     try {
       document.execCommand('insertText', false, textToInsert);
     } catch (error) {
-      console.error('[ChatGPT Complement] execCommand failed:', error);
+      console.error('[Ghost Phrase Complement] execCommand failed:', error);
       const selection = window.getSelection();
       if (selection && selection.rangeCount > 0) {
         const range = selection.getRangeAt(0);
@@ -717,7 +717,7 @@ function acceptCompletion(): void {
   }
 
   hideGhost();
-  console.debug('[ChatGPT Complement] Completion accepted');
+  console.debug('[Ghost Phrase Complement] Completion accepted');
 }
 
 function showErrorToast(message: string): void {
@@ -782,7 +782,7 @@ function invalidateSelectionCache(): void {
 chrome.storage.onChanged.addListener((changes, area) => {
   if (area === 'local' && changes[STORAGE_KEY]) {
     loadData().catch((error) =>
-      console.error('[ChatGPT Complement] Failed to refresh storage data:', error)
+      console.error('[Ghost Phrase Complement] Failed to refresh storage data:', error)
     );
   }
 });

@@ -5,7 +5,7 @@ import prettierPlugin from 'eslint-plugin-prettier';
 
 export default tseslint.config(
   {
-    ignores: ['dist', 'public', 'node_modules']
+    ignores: ['dist', 'public', 'node_modules'],
   },
   js.configs.recommended,
   ...tseslint.configs.recommended,
@@ -16,14 +16,32 @@ export default tseslint.config(
       sourceType: 'module',
       globals: {
         ...globals.browser,
-        ...globals.es2020
-      }
+        ...globals.es2020,
+      },
     },
     plugins: {
-      prettier: prettierPlugin
+      prettier: prettierPlugin,
     },
     rules: {
-      'prettier/prettier': 'error'
-    }
+      'prettier/prettier': 'error',
+    },
+  },
+  {
+    files: ['scripts/**/*.mjs'],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      globals: {
+        ...globals.node,
+        ...globals.nodeBuiltin,
+        ...globals.es2020,
+      },
+    },
+    plugins: {
+      prettier: prettierPlugin,
+    },
+    rules: {
+      'prettier/prettier': 'error',
+    },
   }
 );
