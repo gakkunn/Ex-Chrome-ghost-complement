@@ -4,6 +4,8 @@
 
 <!-- Add other badges here if desired (CI Status / Version, etc.) -->
 
+https://chromewebstore.google.com/detail/ghost-phrase-complement/fihmaainokoaalkkcmllgnhcgkkiilpa
+
 ## Overview
 
 Ghost Phrase Complement adds ghost-text completions for your own English-only phrases inside ChatGPT, Gemini, and Claude editors.
@@ -39,8 +41,7 @@ This is an open-source extension implemented based on Chrome Extension Manifest 
 
 ## Installation
 
-> Note: Not yet published to the Chrome Web Store.  
-> You can use it via "Local Installation (Developer Mode)" below.
+https://chromewebstore.google.com/detail/ghost-phrase-complement/fihmaainokoaalkkcmllgnhcgkkiilpa
 
 ### 1. Clone the repository
 
