@@ -3,8 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
 <!-- Add other badges here if desired (CI Status / Version, etc.) -->
-
-https://chromewebstore.google.com/detail/ghost-phrase-complement/fihmaainokoaalkkcmllgnhcgkkiilpa
+- Chrome Web Store: [Ghost Phrase Complement](https://chromewebstore.google.com/detail/ghost-phrase-complement/fihmaainokoaalkkcmllgnhcgkkiilpa?authuser=0&hl=en)
 
 ## Overview
 
@@ -41,7 +40,7 @@ This is an open-source extension implemented based on Chrome Extension Manifest 
 
 ## Installation
 
-https://chromewebstore.google.com/detail/ghost-phrase-complement/fihmaainokoaalkkcmllgnhcgkkiilpa
+- Chrome Web Store: [Ghost Phrase Complement](https://chromewebstore.google.com/detail/ghost-phrase-complement/fihmaainokoaalkkcmllgnhcgkkiilpa?authuser=0&hl=en)
 
 ### 1. Clone the repository
 
